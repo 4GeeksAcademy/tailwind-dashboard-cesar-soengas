@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Brand Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <div class="min-h-screen lg:flex">
+        <aside class="border-b border-slate-800 bg-slate-900 lg:flex lg:min-h-screen lg:w-64 lg:flex-col lg:border-b-0 lg:border-r">
+            <div class="flex items-center justify-between px-5 py-5">
+                <a href="#" class="flex items-center gap-3" aria-label="My Brand home">
+                    <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-500 text-lg font-bold">M</span>
+                    <span><strong class="block text-sm text-white">My Brand</strong><small class="text-xs text-slate-400">Growth workspace</small></span>
+                </a>
+                <button class="rounded-lg border border-slate-700 p-2 text-slate-400 lg:hidden" aria-label="Open navigation">☰</button>
+            </div>
+            <nav class="hidden px-4 pb-5 lg:block lg:flex-1" aria-label="Main navigation">
+                <p class="px-3 pb-3 pt-5 text-[10px] font-bold uppercase tracking-[.18em] text-slate-500">Workspace</p>
+                <div class="space-y-1">
+                    <a href="#overview" class="block rounded-xl bg-indigo-500/15 px-3 py-3 text-sm font-medium text-indigo-300">▦ &nbsp; Overview</a>
+                    <a href="#drivers" class="block rounded-xl px-3 py-3 text-sm text-slate-400 hover:bg-slate-800 hover:text-white">↗ &nbsp; Analytics</a>
+                    <a href="#operations" class="block rounded-xl px-3 py-3 text-sm text-slate-400 hover:bg-slate-800 hover:text-white">▣ &nbsp; Orders</a>
+                    <a href="#activity" class="block rounded-xl px-3 py-3 text-sm text-slate-400 hover:bg-slate-800 hover:text-white">♙ &nbsp; Customers</a>
+                </div>
+                <p class="px-3 pb-3 pt-8 text-[10px] font-bold uppercase tracking-[.18em] text-slate-500">Manage</p>
+                <a href="#" class="block rounded-xl px-3 py-3 text-sm text-slate-400 hover:bg-slate-800 hover:text-white">⚙ &nbsp; Settings</a>
+                <a href="#" class="block rounded-xl px-3 py-3 text-sm text-slate-400 hover:bg-slate-800 hover:text-white">♢ &nbsp; Notifications <span class="float-right rounded-full bg-rose-500 px-2 text-[10px] text-white">4</span></a>
+            </nav>
+            <div class="hidden border-t border-slate-800 p-4 lg:block"><div class="flex items-center gap-3 rounded-xl bg-slate-800/60 p-3"><span class="flex h-9 w-9 items-center justify-center rounded-full bg-amber-400 text-sm font-bold text-slate-950">CS</span><span class="min-w-0"><strong class="block truncate text-sm">Cesar Soengas</strong><small class="text-xs text-slate-400">Admin account</small></span></div></div>
+        </aside>
+
+        <main class="min-w-0 flex-1">
+            <header class="border-b border-slate-800 px-4 py-5 sm:px-6 lg:px-8">
+                <div class="mx-auto flex max-w-7xl flex-col gap-5 md:flex-row md:items-center md:justify-between">
+                    <div><p class="mb-2 text-xs text-slate-500">Workspace / <span class="text-slate-300">Overview</span></p><h1 class="text-2xl font-bold tracking-tight sm:text-3xl">My Brand Dashboard</h1><p class="mt-1 text-sm text-slate-400">A clear view of your brand performance and daily operations.</p></div>
+                    <div class="flex flex-col gap-3 sm:flex-row"><button class="rounded-xl border border-slate-700 px-4 py-2.5 text-sm text-slate-300 hover:bg-slate-800">Sep 1 – Sep 30, 2026</button><button class="rounded-xl bg-indigo-500 px-4 py-2.5 text-sm font-semibold hover:bg-indigo-400">+ New report</button></div>
+                </div>
+            </header>
+
+            <div class="mx-auto max-w-7xl space-y-6 px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
+                <section id="overview" aria-labelledby="kpi-heading">
+                    <div class="mb-4"><p class="text-xs font-semibold uppercase tracking-[.16em] text-indigo-400">Performance snapshot</p><h2 id="kpi-heading" class="mt-1 text-lg font-semibold">Key performance indicators</h2></div>
+                    <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+                        <article class="rounded-2xl border border-slate-800 bg-slate-900 p-5"><div class="flex justify-between"><span class="text-2xl text-emerald-400">↗</span><span class="rounded-full bg-emerald-500/10 px-2 py-1 text-xs font-semibold text-emerald-400">+12.8%</span></div><p class="mt-5 text-sm text-slate-400">Total revenue</p><p class="mt-1 text-2xl font-bold">$128,430</p><p class="mt-2 text-xs text-slate-500">vs. $113,860 last month</p></article>
+                        <article class="rounded-2xl border border-slate-800 bg-slate-900 p-5"><div class="flex justify-between"><span class="text-2xl text-indigo-400">♙</span><span class="rounded-full bg-indigo-500/10 px-2 py-1 text-xs font-semibold text-indigo-300">+8.4%</span></div><p class="mt-5 text-sm text-slate-400">Active customers</p><p class="mt-1 text-2xl font-bold">24,892</p><p class="mt-2 text-xs text-slate-500">2,104 new this month</p></article>
+                        <article class="rounded-2xl border border-slate-800 bg-slate-900 p-5"><div class="flex justify-between"><span class="text-2xl text-amber-400">◷</span><span class="rounded-full bg-amber-500/10 px-2 py-1 text-xs font-semibold text-amber-300">-2.1%</span></div><p class="mt-5 text-sm text-slate-400">Avg. order value</p><p class="mt-1 text-2xl font-bold">$86.40</p><p class="mt-2 text-xs text-slate-500">Target: $90.00</p></article>
+                        <article class="rounded-2xl border border-slate-800 bg-slate-900 p-5"><div class="flex justify-between"><span class="text-2xl text-rose-400">⚑</span><span class="rounded-full bg-rose-500/10 px-2 py-1 text-xs font-semibold text-rose-300">+1.6%</span></div><p class="mt-5 text-sm text-slate-400">Conversion rate</p><p class="mt-1 text-2xl font-bold">5.84%</p><p class="mt-2 text-xs text-slate-500">Industry average: 4.90%</p></article>
+                    </div>
+                </section>
+
+                <section id="drivers" aria-labelledby="drivers-heading"><div class="mb-4"><p class="text-xs font-semibold uppercase tracking-[.16em] text-cyan-400">What moves the needle</p><h2 id="drivers-heading" class="mt-1 text-lg font-semibold">Growth drivers</h2></div>
+                    <div class="grid gap-4 md:grid-cols-3">
+                        <article class="rounded-2xl border border-slate-800 bg-slate-900 p-5"><div class="flex justify-between"><div><h3 class="font-semibold">Paid acquisition</h3><p class="text-xs text-slate-500">Marketing channel</p></div><b class="text-emerald-400">+24%</b></div><div class="mt-5 h-2 rounded-full bg-slate-800"><div class="h-full w-[78%] rounded-full bg-cyan-400"></div></div><div class="mt-3 flex justify-between text-xs text-slate-500"><span>78% of target</span><span>$42.8k spend</span></div></article>
+                        <article class="rounded-2xl border border-slate-800 bg-slate-900 p-5"><div class="flex justify-between"><div><h3 class="font-semibold">Organic reach</h3><p class="text-xs text-slate-500">Content &amp; SEO</p></div><b class="text-emerald-400">+18%</b></div><div class="mt-5 h-2 rounded-full bg-slate-800"><div class="h-full w-[64%] rounded-full bg-violet-400"></div></div><div class="mt-3 flex justify-between text-xs text-slate-500"><span>64% of target</span><span>89.4k visits</span></div></article>
+                        <article class="rounded-2xl border border-slate-800 bg-slate-900 p-5"><div class="flex justify-between"><div><h3 class="font-semibold">Customer referrals</h3><p class="text-xs text-slate-500">Community channel</p></div><b class="text-emerald-400">+9.6%</b></div><div class="mt-5 h-2 rounded-full bg-slate-800"><div class="h-full w-[46%] rounded-full bg-orange-400"></div></div><div class="mt-3 flex justify-between text-xs text-slate-500"><span>46% of target</span><span>1,246 referrals</span></div></article>
+                    </div>
+                </section>
+
+                <section id="operations" aria-labelledby="operations-heading"><div class="mb-4"><p class="text-xs font-semibold uppercase tracking-[.16em] text-emerald-400">Keep things moving</p><h2 id="operations-heading" class="mt-1 text-lg font-semibold">Operational details</h2></div>
+                    <div class="grid gap-6 xl:grid-cols-[1.5fr_1fr]">
+                        <article class="overflow-hidden rounded-2xl border border-slate-800 bg-slate-900"><div class="flex items-center justify-between border-b border-slate-800 px-5 py-4"><div><h3 class="font-semibold">Recent orders</h3><p class="mt-1 text-xs text-slate-500">Latest customer activity</p></div><a href="#" class="text-sm text-indigo-400">View all</a></div><div class="overflow-x-auto"><table class="w-full min-w-[580px] text-left text-sm"><thead class="bg-slate-950/40 text-xs uppercase text-slate-500"><tr><th class="px-5 py-3">Order</th><th class="px-5 py-3">Customer</th><th class="px-5 py-3">Date</th><th class="px-5 py-3">Amount</th><th class="px-5 py-3">Status</th></tr></thead><tbody class="divide-y divide-slate-800"><tr><td class="px-5 py-4 font-medium">#MB-10482</td><td class="px-5 py-4 text-slate-400">Olivia Martin</td><td class="px-5 py-4 text-slate-500">Sep 19</td><td class="px-5 py-4">$248.00</td><td class="px-5 py-4"><span class="rounded-full bg-emerald-500/10 px-2.5 py-1 text-xs text-emerald-400">Paid</span></td></tr><tr><td class="px-5 py-4 font-medium">#MB-10481</td><td class="px-5 py-4 text-slate-400">Noah Williams</td><td class="px-5 py-4 text-slate-500">Sep 19</td><td class="px-5 py-4">$126.50</td><td class="px-5 py-4"><span class="rounded-full bg-amber-500/10 px-2.5 py-1 text-xs text-amber-300">Processing</span></td></tr><tr><td class="px-5 py-4 font-medium">#MB-10480</td><td class="px-5 py-4 text-slate-400">Emma Johnson</td><td class="px-5 py-4 text-slate-500">Sep 18</td><td class="px-5 py-4">$89.00</td><td class="px-5 py-4"><span class="rounded-full bg-emerald-500/10 px-2.5 py-1 text-xs text-emerald-400">Paid</span></td></tr></tbody></table></div></article>
+                        <article id="activity" class="rounded-2xl border border-slate-800 bg-slate-900"><div class="border-b border-slate-800 px-5 py-4"><h3 class="font-semibold">Team activity</h3><p class="mt-1 text-xs text-slate-500">Recent operational updates</p></div><ul class="divide-y divide-slate-800"><li class="flex gap-3 px-5 py-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-indigo-500/15 text-xs font-bold text-indigo-300">AM</span><p class="text-sm text-slate-300"><strong class="text-white">Alex Morgan</strong> published a campaign <small class="mt-1 block text-xs text-slate-500">12 minutes ago</small></p></li><li class="flex gap-3 px-5 py-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-xs font-bold text-emerald-300">JL</span><p class="text-sm text-slate-300"><strong class="text-white">Jamie Lee</strong> resolved an order issue <small class="mt-1 block text-xs text-slate-500">38 minutes ago</small></p></li><li class="flex gap-3 px-5 py-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-orange-500/15 text-xs font-bold text-orange-300">RK</span><p class="text-sm text-slate-300"><strong class="text-white">Ryan Kim</strong> added a new product <small class="mt-1 block text-xs text-slate-500">1 hour ago</small></p></li></ul></article>
+                    </div>
+                </section>
+                <footer class="border-t border-slate-800 pt-5 text-xs text-slate-500">Last synced September 19, 2026 at 10:42 AM</footer>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
